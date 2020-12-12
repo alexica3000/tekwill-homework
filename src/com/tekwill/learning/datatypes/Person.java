@@ -1,4 +1,4 @@
-package com.tekwill.learning.datatypes.types;
+package com.tekwill.learning.datatypes;
 
 public class Person {
     boolean married = true;
