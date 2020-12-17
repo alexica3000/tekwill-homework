@@ -1,4 +1,4 @@
-package com.tekwill.learning.datatypes;
+package com.tekwill.learning.datatypes.types;
 
 public class Constants {
     public static final int ZERO_NUMBER = 0;

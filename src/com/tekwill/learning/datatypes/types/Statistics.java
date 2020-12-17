@@ -1,4 +1,4 @@
-package com.tekwill.learning.datatypes;
+package com.tekwill.learning.datatypes.types;
 
 public class Statistics {
     public static long currentWorldPopulation = 7_831_436_009L;

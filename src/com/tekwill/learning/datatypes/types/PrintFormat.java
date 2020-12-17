@@ -1,4 +1,4 @@
-package com.tekwill.learning.datatypes;
+package com.tekwill.learning.datatypes.types;
 
 public class PrintFormat {
 
@@ -11,7 +11,7 @@ public class PrintFormat {
         int num6 = 1862452;
         int num7 = 543655;
         int num8 = 48645543;
-        
+
         double numDouble1 = 78945.24;
         double numDouble2 = 856.12;
         double numDouble3 = 8569.32;
