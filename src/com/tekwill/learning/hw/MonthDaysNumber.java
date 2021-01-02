@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class MonthDaysNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int days;
 
         System.out.print("Input month number: ");
         int montNumber = scanner.nextInt();
