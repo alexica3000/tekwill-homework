@@ -1,5 +1,6 @@
 package book.domain;
 
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -11,6 +12,14 @@ public class Book {
     private boolean isRare;
     private int numberOfPages;
     private List<Page> pages = new ArrayList<>();
+
+    public Book(Long id, String isbn, String name, boolean isRare, int numberOfPages) {
+        this.id = id;
+        this.isbn = isbn;
+        this.name = name;
+        this.isRare = isRare;
+        this.numberOfPages = numberOfPages;
+    }
 
     public Book(String isbn, String name, boolean isRare, int numberOfPages) {
         this.isbn = isbn;
@@ -83,9 +92,9 @@ public class Book {
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
         return isRare == book.isRare && numberOfPages == book.numberOfPages && Objects.equals(id,
-                book.id) && Objects.equals(
+                                                                                              book.id) && Objects.equals(
                 isbn, book.isbn) && Objects.equals(name, book.name) && Objects.equals(pages,
-                book.pages);
+                                                                                      book.pages);
     }
 
     @Override

@@ -9,11 +9,22 @@ public class Page {
 
     private Book book;
 
+    public Page(Long id, String content, int pageNumber) {
+        this.id = id;
+        this.content = content;
+        this.pageNumber = pageNumber;
+    }
+
     public Page(Long id, String content, int pageNumber, Book book) {
         this.id = id;
         this.content = content;
         this.pageNumber = pageNumber;
         this.book = book;
+    }
+
+    public Page(String content, int pageNumber) {
+        this.content = content;
+        this.pageNumber = pageNumber;
     }
 
     public Long getId() {
@@ -54,7 +65,7 @@ public class Page {
         if (o == null || getClass() != o.getClass()) return false;
         Page page = (Page) o;
         return pageNumber == page.pageNumber && Objects.equals(id, page.id) && Objects.equals(content,
-                page.content) && Objects.equals(
+                                                                                              page.content) && Objects.equals(
                 book, page.book);
     }
 
@@ -69,7 +80,6 @@ public class Page {
                 "id=" + id +
                 ", content='" + content + '\'' +
                 ", pageNumber=" + pageNumber +
-                ", book=" + book +
                 '}';
     }
 }
